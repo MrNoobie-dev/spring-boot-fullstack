@@ -187,6 +187,7 @@
                 <artifactId>jib-maven-plugin</artifactId>
                 <version>3.3.2</version>
                 <configuration>
+                    <skip>true</skip>
                     <from>
                         <image>eclipse-temurin:17</image>
                         <platforms>
