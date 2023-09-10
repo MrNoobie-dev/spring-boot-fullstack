@@ -11,15 +11,13 @@
     <groupId>com.stefco</groupId>
     <artifactId>webapp</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <organization>
-        <name>stefco</name>
-        <url>https://stefco.com</url>
-    </organization>
     <name>webapp</name>
     <description>webapp</description>
     <properties>
         <java.version>17</java.version>
         <docker.username>mrnoobi</docker.username>
+        <docker.image.name>webapp-api</docker.image.name>
+        <docker.image.tag/>
     </properties>
     <dependencies>
         <dependency>
@@ -187,7 +185,6 @@
                 <artifactId>jib-maven-plugin</artifactId>
                 <version>3.3.2</version>
                 <configuration>
-                    <skip>true</skip>
                     <from>
                         <image>eclipse-temurin:17</image>
                         <platforms>
@@ -202,7 +199,7 @@
                         </platforms>
                     </from>
                     <to>
-                        <image>docker.io/${docker.username}/${project.artifactId}:${project.version}</image>
+                        <image>docker.io/${docker.username}/${docker.image.name}:${docker.image.tag}</image>
                         <tags>
                             <tag>latest</tag>
                         </tags>
