@@ -3,7 +3,7 @@
   "containerDefinitions": [
     {
       "name": "stefco-api",
-      "image": "mrnoobi/webapp:latest",
+      "image": "mrnoobi/webapp-api",
       "essential": true,
       "memory": 512,
       "portMappings": [
